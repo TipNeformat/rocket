@@ -51,11 +51,11 @@ button {
 }
 
 #rocket {
-    width: 200px;
+    width: 300px;
     height: 200px;
     position: absolute;
     left: 45%;
-    bottom: 5px;
+    top: 5px;
 
     transition: all 5s ease-in-out;
 

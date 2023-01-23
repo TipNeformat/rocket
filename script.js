@@ -2,7 +2,7 @@ let rocket = document.getElementById("rocket");
 let buttonStart = document.getElementById("start");
 let newRocket = document.getElementById("newRocket");
 let countDown = document.getElementById("countDown");
-let second = 10;
+let second = 0;
 let timerId
 
 function start() {
@@ -23,7 +23,7 @@ function subtraction() {
     if (second == 0) {
         countDown.innerHTML = "Поехали!!!"
         clearInterval(timerId);
-        rocket.style.bottom = "1000px"
+        rocket.style.top = "1000px"
         setTimeout(hide, 5000)
     } else {
         countDown.innerHTML = second
@@ -37,7 +37,7 @@ function setNewRocket() {
     newRocket.style.display = "none"
     rocket.style.display = "block"
     countDown.innerHTML = "Ракета на старте"
-    rocket.style.bottom = "5px"
+    rocket.style.top = "5px"
     buttonStart.style.display = "block"
 
 }
